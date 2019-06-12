@@ -1,0 +1,2 @@
+C:\Users\Dom\Documents\Visual Studio 2017\Projects\SpecFlowTestBikestar\obj\Debug\SpecFlowTestBikestar.csprojAssemblyReference.cache
+C:\Users\Dom\Documents\Visual Studio 2017\Projects\SpecFlowTestBikestar\obj\Debug\SpecFlowTestBikestar.csproj.CoreCompileInputs.cache
