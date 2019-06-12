@@ -69,7 +69,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pages\CartPage.cs" />
+    <Compile Include="pages\HelmetProductPage.cs" />
     <Compile Include="pages\HomePage.cs" />
+    <Compile Include="pages\IntegralHelmetsPage.cs" />
     <Compile Include="SpecFlowBikestarFeature1Steps.cs" />
     <Compile Include="SpecFlowFeature1.feature.cs">
       <AutoGen>True</AutoGen>

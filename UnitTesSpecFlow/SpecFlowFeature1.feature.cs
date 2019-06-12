@@ -32,7 +32,8 @@ namespace UnitTesSpecFlow
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "SpecFlowBikestarFeature1", "\tAs a not registered user of bikestar.pl\r\n\tI want to open product list of Integra" +
-                    "l Helmets\r\n\tso that I can find my new Helmet", ProgrammingLanguage.CSharp, ((string[])(null)));
+                    "l Helmets\r\n\tand I want to add Helmet to cart\r\n\tso that I can buy my new Helmet, " +
+                    "", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -77,17 +78,25 @@ namespace UnitTesSpecFlow
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Open product list by clicking top menu", null, new string[] {
                         "Positive"});
-#line 8
+#line 11
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 10
-testRunner.Given("Bikestar main page has opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 12
-testRunner.When("user moves mouse over Helmets in menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 13
+testRunner.Given("Bikestar main page has opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 15
+testRunner.When("user moves mouse over Helmets in menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 16
 testRunner.And("user clicks on integral helmets menu item", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 14
+#line 17
 testRunner.Then("product list of integral helmets is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 19
+testRunner.When("user clicks on link Rihno Racer helmet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 20
+testRunner.And("user select helmet size XL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 21
+testRunner.And("user click add to cart button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 23
+testRunner.Then("selected helmet has been added to cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
