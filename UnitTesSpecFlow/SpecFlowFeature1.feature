@@ -8,7 +8,7 @@
 
 
 @Positive
-Scenario: Open product list by clicking top menu 
+Scenario: Open product list by clicking top menu and add helmet to cart
 
 Given Bikestar main page has opened
 

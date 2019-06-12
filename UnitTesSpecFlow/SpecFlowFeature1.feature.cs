@@ -72,11 +72,11 @@ namespace UnitTesSpecFlow
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Open product list by clicking top menu")]
+        [NUnit.Framework.DescriptionAttribute("Open product list by clicking top menu and add helmet to cart")]
         [NUnit.Framework.CategoryAttribute("Positive")]
-        public virtual void OpenProductListByClickingTopMenu()
+        public virtual void OpenProductListByClickingTopMenuAndAddHelmetToCart()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Open product list by clicking top menu", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Open product list by clicking top menu and add helmet to cart", null, new string[] {
                         "Positive"});
 #line 11
 this.ScenarioInitialize(scenarioInfo);
